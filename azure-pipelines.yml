@@ -9,5 +9,5 @@ stages:
     - job: firstjob
       steps:
 	  - bash: echo $(date)
-      - bash: ls -lrta $(System.DefaultWorkingDirectory)
-      - bash: echo $(Build.ArtifactStagingDirectory)
+    - bash: ls -lrta $(System.DefaultWorkingDirectory)
+    - bash: echo $(Build.ArtifactStagingDirectory)
