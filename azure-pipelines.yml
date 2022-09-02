@@ -7,7 +7,7 @@ stages:
 - stage: Build
   jobs:
     - job: firstjob
-steps:
+  steps:
     - bash: echo $(date)
     - bash: ls -lrta $(System.DefaultWorkingDirectory)
     - bash: echo $(Build.ArtifactStagingDirectory)
